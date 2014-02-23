@@ -7,9 +7,9 @@ body {
 	padding-bottom: 40px;
 }
 
-#register a:link {
+#header a:link {
 	color: #000000;
 }
-#register a:hover {
+#header a:hover {
 	color: #0d5353;
 }
