@@ -6,3 +6,10 @@ body {
     padding-top: 60px;
 	padding-bottom: 40px;
 }
+
+#register a:link {
+	color: #000000;
+}
+#register a:hover {
+	color: #0d5353;
+}
