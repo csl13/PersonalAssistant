@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Personal Assistant</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="static/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="static/css/person.style.css" rel="stylesheet" media="screen">
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+  </head>
+
+  <body>
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="static/bootstrap/js/bootstrap.min.js"></script>
+
+    <div class="container">
+      <div id="header">
+        <a href="index.html" class="top-logo-link">
+            <img src="static/images/blimp.png" class="top-logo" alt="Blimp logo">
+        </a>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="horizontal-line"></div>
+    </div>
+
+    <div class="container">
+      <div id="pg-main-context">
+        <div class="row">
+          <div class="span8 pg-main-left">
+            <a href="">
+              <img src="static/images/pg-home.png" class="top-logo" alt="Blimp logo">
+            </a>
+          </div>
+
+          <div class="span4 pg-main-right">
+            <div class="pg-login-form">
+              <form action="/acount/login/" method="post">
+                <div class="form-group">
+                  <label for="input_login_name" class="login-control-label">注册名</label>
+                  <div>
+                    <input type="text"  id="input_login_name" name="login_name">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="input_password" class="login-control-label">密码</label>
+                  <div>
+                    <input type="password" id="input_password" name="password">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div>
+                    <button type="submit">登录</button>
+                  </div>
+                </div>
+
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </body>
+</html>

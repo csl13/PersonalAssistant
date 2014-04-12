@@ -1,15 +1,3 @@
 body {
-    background-color: #b5a789
-    font-family:      Georgia, "Times New Roman", Times, serif;
-    font-size:        small;
-    margin:           0px;
-    padding-top: 60px;
-	padding-bottom: 40px;
-}
-
-#header a:link {
-	color: #000000;
-}
-#header a:hover {
-	color: #0d5353;
+	padding-top: 50px
 }

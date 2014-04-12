@@ -9,7 +9,7 @@
 
     <!-- Le styles -->
     <link href="static/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <link href="static/css/main.css" rel="stylesheet", media="screen">
+    <link href="static/css/main.css" rel="stylesheet" media="screen">
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="../assets/js/html5shiv.js"></script>
@@ -21,70 +21,114 @@
   <body>
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="static/bootstrap/js/bootstrap.min.js"></script>
-    <!-- nav -->
-<div class="navbar navbar-fixed-top">
-    <div class="navbar-inner">
-        <div class="container">
-            <a class="brand" href="/" style="font-size:24px;">ManagerCenter</a>
-            <ul class="nav">
-                <li>
-                    <a href="/about/" class="nav_item">关于</a>
-                </li>
-                <!--li><a href="/pricing">Pricing</a></li-->
+
+    <div class="container" id="header">
+        <div class="masthead">
+            <a href="index.html" class="top-logo-link">
+                <img src="static/images/blimp.png" class="top-logo" alt="Blimp logo">
+            </a>
+            <ul class="nav nav-pills pull-right top-nav">
+                <li class="top-nav-item"><a href="#features">Features</a></li>
+                <li class="top-nav-item"><a href="#pricing">Pricing</a></li>
+                <li class="top-nav-item"><a href="/account/login/">登录</a></li>
+                <li class="top-nav-item"><a href="/account/signup">注册</a></li>
             </ul>
-            <ul class="nav">
-                <li>
-                    <a href="/contract/" class="nav_item">联系我们</a>
-                </li>
-            </ul>
-            
-            <ul class="nav pull-right">
-                <li>
-                    <a href="/account/login/" class="nav_item">登录</a>                    
-                </li>
-                <li><a href="/account/signup/" style="color: #6cb653;" class="nav_item">注册</a></li>
-            </ul>
-            
         </div>
     </div>
-</div>
 
-    <div class="container">
-
-      <!-- Main hero unit for a primary marketing message or call to action -->
-      <div class="hero-unit">
-        <h1>Hello, world!</h1>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        <p><a href="#" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+    <div class="jumbotron">
+      <div class="container">
+          <div class="row">
+              <div class="span5 main-cta-left" id="main-left">
+                  <h3 class="title">Beautifully Easy Project Management</h3>
+                  <span class="sub-title">Increase your team's productivity today.</span>
+                  <div class="main-cta-btn-wrapper">
+                      <a href="/account/signup/" class="btn btn-large btn-success cta-button" onclick="_gaq.push(['_trackEvent', 'Click', 'Sign Up', 'Top Button']);">Get Started Free</a>
+                  </div>
+              </div>
+              <div class="span7 main-cta-right" id="main-right">
+                  <div id="screenshotCarousel" class="carousel slide pull-right main-carousel-wrapper">
+                      <ol class="carousel-indicators">
+                          <li data-target="#screenshotCarousel" data-slide-to="0" class="active"></li>
+                          <li data-target="#screenshotCarousel" data-slide-to="1"></li>
+                          <li data-target="#screenshotCarousel" data-slide-to="2"></li>
+                          <li data-target="#screenshotCarousel" data-slide-to="3"></li>
+                      </ol>
+                      <!-- Carousel items -->
+                      <div class="carousel-inner">
+                          <div class="active item"><img src="static/images/screenshot1.png" alt="Screenshot of goals"></div>
+                          <div class="item"><img src="static/images/screenshot2.png" alt="Screenshot of projects"></div>
+                          <div class="item"><img src="static/images/screenshot3.png" alt="Screenshot of team"></div>
+                          <div class="item"><img src="static/images/screenshot4.png" alt="Screenshot of discussions"></div>
+                      </div>
+                  </div>
+              </div>
+          </div>
       </div>
+  </div>  
 
-      <!-- Example row of columns -->
+
+
+  <div class="container features-section-wrapper" id="features">
       <div class="row">
-        <div class="span4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
-        </div>
-        <div class="span4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
-       </div>
-        <div class="span4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
-        </div>
+          <div class="span4 feature-wrapper">
+              <h4 class="feature-title"><i class="icon-process"></i>Simple Process</h4>
+              <div class="feature-text">
+                  Know who is doing what, how much work is left to finish and what you need to work on now. Blimp automates a process that enables that and a lot more.
+              </div>
+          </div>
+          <div class="span4 feature-wrapper">
+              <h4 class="feature-title"><i class="icon-goals"></i>Clear Goals</h4>
+              <div class="feature-text">
+                  Split projects into goals and goals into tasks and assign tasks to your team in a heartbeat. Our goals functionality is fast, easy to understand and beautiful. Spend your time working.
+              </div>
+          </div>
+          <div class="span4 feature-wrapper">
+              <h4 class="feature-title"><i class="icon-discussions"></i>Focused Discussions</h4>
+              <div class="feature-text">
+                  Discuss ideas, ask questions and report your status all within our easy to use discussions feature. You can even participate via email and it will add your messages to the right project.
+              </div>
+          </div>
       </div>
+    </div>
 
-      <hr>
+    <div class="container horizontal-line">
+    </div>
 
-      <footer>
-        <p>&copy; Company 2013</p>
-      </footer>
-
-    </div> <!-- /container -->
-
+    <div class="footer-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="span2">
+                    <ul class="footer-link-list">
+                        <li class="footer-link-item"><a href="http://blog.getblimp.com">Blog</a></li>
+                        <li class="footer-link-item"><a href="https://www.hipchat.com/ggkkpDG4E">Live support chat</a></li>
+                        <li class="footer-link-item"><a href="http://dev.getblimp.com/">Developer API</a></li>
+                    </ul>
+                </div>
+                <div class="span2">
+                    <ul class="footer-link-list">
+                        <li class="footer-link-item"><a href="mailto:hello@getblimp.com">Contact us</a></li>
+                        <li class="footer-link-item"><a href="/privacy">Privacy policy</a></li>
+                        <li class="footer-link-item"><a href="/tos">Terms of service</a></li>
+                    </ul>
+                </div>
+                <div class="span2">
+                    <ul class="footer-link-list">
+                        <li class="footer-link-item"><a href="http://twitter.com/blimp">Twitter</a></li>
+                        <li class="footer-link-item"><a href="http://facebook.com/getblimp">Facebook</a></li>
+                        <li class="footer-link-item"><a href="https://plus.google.com/113403197029734491583">Google Plus</a></li>
+                    </ul>
+                </div>
+                <div class="span6 footer-align-right">
+                </div>
+            </div>
+            <div class="row footer-meta-wrapper">
+                <div class="span6">Made by the <a href="https://twitter.com/blimp/blimp-crew">Blimp Crew</a> in <a href="http://www.seepuertorico.com/">San Juan, Puerto Rico</a></div>
+                <div class="span6 footer-align-right">© 2012-2013 Blimp LLC.</div>
+            </div>
+        </div>
+    </div>
+    
     <!-- Le javascript
     ================================================== -->
   </body>
