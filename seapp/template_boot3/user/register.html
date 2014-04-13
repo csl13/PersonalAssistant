@@ -1,0 +1,32 @@
+{% extends "../include/head.html" %}
+{% block content %} 
+	<div class="row">
+	  <div class="col-xs-8">
+	  	<div class="register-form-head">
+	  		<h4>Create your acount</h4>
+	  	</div>
+	  	<form role="form" action="/register/" method="post">
+	  		<div class="form-group">
+	  			<label for="inputEmail">email</label>
+	  			<input type="email" class="form-control" id="inputEmail" placeholder="Enter email">
+	  		</div>
+	  		<div class="form-group">
+	  			<label for="username">username</label>
+	  			<input type="text" class="form-control" id="inputUsername" placeholder="User name">
+	  		</div>
+	  		<div class="form-group">
+	  			<label for="inputPasswd">password</label>
+	  			<input type="password" class="form-control" id="inputPasswd" placeholder="Password">
+	  		</div>
+	  		<div class="form-group">
+	  			<label for="inputConfirmPasswd">username</label>
+	  			<input type="password" class="form-control" id="inputConfirmPasswd" placeholder="Confirm password">
+	  		</div>
+	  		<button type="submit" class="btn btn-default">Submit</button>
+	  	</form>
+	  </div>
+	  <div class="col-xs-4">
+	  </div>
+	</div>
+	</div>
+{% endblock %}

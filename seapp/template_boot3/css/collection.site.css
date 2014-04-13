@@ -1,0 +1,33 @@
+body {
+	margin:         0px;
+	padding-top:    50px;
+	padding-bottom: 50px;
+	zoom: 1;
+}
+
+.horizontal-line {
+	background-color: #dadada;
+	height: 1px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.main-width {
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+#site-tail {
+	margin-top: 70px;
+}
+
+a {
+	color: #000000;
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.register-form-head {
+	padding-bottom: 20px;
+}
